@@ -1,0 +1,80 @@
+header {
+    
+    height: 180px;
+    background-color: black;
+    color: WHITE;
+    text-align: center;
+}
+
+.container {
+
+    height: 100vh;
+    margin: 10px 80px 80px 80px;
+    background-color: lightblue;
+}
+
+#description {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 10%;
+    text-align: center;
+}
+
+#antpath {
+    margin-left: 50px;
+    font-size: large;
+    color: gray;
+}
+
+#presentation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightcoral;
+    flex-wrap: wrap;
+}
+
+.text {
+    margin: 1%;
+    background-color: lightgreen;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-text {
+    margin: 1%;
+    width: 95%;
+    height: 50px;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    border-radius: 15% /100%;
+}
+
+.body-text {
+    height: 85%;
+    background-color: whitesmoke;
+    width: 95%;
+    margin-top: 5%;
+
+}
+
+#services {
+    background-color: lightslategray;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: lightpink;
+    width: 350px;
+    height: 300px;
+
+}
