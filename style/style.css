@@ -1,5 +1,5 @@
 header {
-    
+
     height: 180px;
     background-color: black;
     color: WHITE;
@@ -7,74 +7,161 @@ header {
 }
 
 .container {
-
-    height: 100vh;
-    margin: 10px 80px 80px 80px;
-    background-color: lightblue;
+    
+    height: 98vh;
+    margin: 0px 0px 80px 0px;
+    
 }
 
 #description {
-    width: 90%;
+    
+    height: 35px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin: 10px 10%;
-    text-align: center;
+    margin: 0;
+    align-items: center;
+    background-color: #ffe4e1;
 }
 
 #antpath {
-    margin-left: 50px;
+   margin: 0px 50px;
     font-size: large;
     color: gray;
 }
 
 #presentation {
+    height: 550px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: lightcoral;
+    align-items: center;
+    background-color: #b0f2c2;
     flex-wrap: wrap;
 }
 
+#imgiphone {
+
+    height: 90%;
+    
+}
+
 .text {
-    margin: 1%;
-    background-color: lightgreen;
+
+    /* background-color: lightgreen; */
     width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .title-text {
-    margin: 1%;
+    
     width: 95%;
-    height: 50px;
-    background-color: whitesmoke;
-    border: 1px solid gray;
-    border-radius: 15% /100%;
+    height: 55px;
+    /* background-color: whitesmoke; */
+   
+   
+
 }
 
 .body-text {
-    height: 85%;
-    background-color: whitesmoke;
+    height: 45%;
+    /* background-color: whitesmoke; */
     width: 95%;
     margin-top: 5%;
+    font-size: large;
+    text-align: center;
+    padding: 20px;
 
 }
 
 #services {
-    background-color: lightslategray;
-    width: 100%;
+    
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 10px;
+    gap: 70px;
     flex-wrap: wrap;
 }
 
 .product {
-    background-color: lightpink;
-    width: 350px;
+    background-color: #b0c2f2;
+    width: 450px;
     height: 300px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px black;
+}
 
+
+
+button{
+    box-shadow: 5px 5px 5px #626362;
+    
+    background-color: #000000;
+    color: white;
+}
+
+footer {
+    height: 280px;
+    background-color: rgb(51, 52, 124);
+    color: white;
+    text-align: center;
+    width: 99.2vw;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+}
+
+h1, h2 {
+    text-align: center;
+    font-size: xx-large;
+    
+}
+h3{
+    text-align: center;
+    font-size: x-large;
+}
+.container-review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+#reviews {
+    
+    width: auto;
+    height: auto;
+    padding: 20px;
+
+}
+
+.review {
+    font-size: medium;
+    text-align: center;
+
+    border-radius: 70% /100%;
+    padding: 38px;
+    background-color: white;
+    box-shadow: 5px 5px 5px black;
+}
+
+/* Google imagen review
+ */
+ #imggoogle {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+#containergoogle {
+    margin: auto;
+    width: 450px;
+    height: 100px;
 }
