@@ -1,13 +1,22 @@
 function enviarFormulario(event) {
+  let isValid = true;
+
   const form = document.getElementById("contacto");
   for (var i = 0; i < form.elements.length; i++) {
     if (
       form.elements[i].value === "" &&
       form.elements[i].hasAttribute("required")
     ) {
-      alert("Debe rellenar todos los campos obligatorios!");
-      return false;
+      form.elements[i].classList.add("campo-obligatorio");
+      isValid = false;
+    } else {
+      form.elements[i].classList.remove("campo-obligatorio");
     }
+  }
+
+  if (!isValid) {
+    alert("Debe rellenar todos los campos obligatorios!");
+    return false;
   }
 
   if (document.getElementById("politicaPrivacidad").checked == false) {
