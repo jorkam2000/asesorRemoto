@@ -1,0 +1,187 @@
+:root {
+  --main-bg-color: brown;
+
+  /* 
+  --color-header: rgba(0, 129, 167, 1);
+  --color-footer: rgba(0, 175, 185, 1);
+  --color-background: rgba(253, 252, 220, 1);
+  --color-text: rgba(254, 217, 183, 1);
+  --color-danger: rgba(240, 113, 103, 1); 
+  */
+
+  --color-footer: rgba(218, 44, 56, 1);
+  --color-header: rgba(34, 111, 84, 1);
+  --color-background: rgba(135, 195, 143, 1);
+  --color-text: rgba(244, 240, 187, 1);
+  --color-danger: rgba(67, 41, 31, 1);
+}
+
+.rubik-letra-base {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  /* border: 1px solid black; */
+  font-family: "Rubik";
+  font-size: large;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color-background);
+  color: var(--color-danger);
+}
+
+.main {
+  /* border: 1px solid goldenrod; */
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.footer {
+  /* border: 1px solid black; */
+  /* background-color: olive; */
+  display: flex;
+}
+
+header {
+  /* border: 1px solid black; */
+  background-color: var(--color-header);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.other-links {
+  /* border: 1px solid yellow; */
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  justify-content: end;
+  padding: 10px;
+}
+
+footer {
+  /* border: 1px solid black; */
+  background-color: var(--color-header);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  width: ;
+}
+
+.pieDePagina {
+  /* border: 1px solid black; */
+  background-color: var(--color-header);
+  width: 33%;
+  color: var(--color-danger);
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cabeceraDePagina {
+  /* border: 1px solid black; */
+  width: 30%;
+  color: white;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+h3 {
+  padding: 10px;
+}
+
+.politica-privacidad {
+  color: #000;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.breadcrumb-item {
+  /* border: 1px solid black; */
+  color: var(--color-danger);
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.enlace-web {
+  /* border: 1px solid black; */
+  color: var(--color-danger);
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+div {
+  /* border: 1px solid blueviolet; */
+}
+
+.div-titulo {
+  width: 60%;
+  align-self: center;
+}
+
+.button {
+  /* background-color: white; */
+  background-color: var(--color-text);
+  color: var(--color-danger);
+  border-radius: 10em;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--color-danger);
+  box-shadow: 0 0 0 0 var(--color-danger);
+}
+
+.button:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black;
+}
+
+.button:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+}
+
+select,
+textarea,
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius:5px;
+}
+
+.campo-obligatorio {
+  border: 1px solid red;
+}
+#contacto {
+  margin: auto;
+  width: 60%;
+}
+p,
+label {
+  text-align: left;
+}
+
+.prueba {
+    width:20px;
+    padding: 10px;
+  }
+}
