@@ -1,0 +1,139 @@
+:root {
+  --color-footer: #05292e;
+  --color-header: rgba(34, 111, 84, 1);
+  --color-background: #e8fafc;
+  --color-text: rgba(244, 240, 187, 1);
+  --color-danger: #a47049;
+  --color-border: #09474f;
+  --color-shadow: rgba(9, 72, 80, 0.2);
+}
+
+body {
+  margin: 0px;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: var(--color-background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  box-shadow: 0px 12px 18px -6px var(--color-shadow);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #fff;
+}
+header img {
+  width: 350px;
+  margin: 0 auto;
+}
+nav {
+  height: 60px;
+}
+header ul {
+  width: 25%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header ul li {
+  border-left: 1px solid #14a5b8;
+  padding: 10px 10px;
+  list-style: none;
+}
+
+.seccion-contacto {
+  background-color: var(--color-background);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.seccion-contacto-text h3 {
+  color: #094850 !important;
+  font-size: 22px;
+}
+.seccion-contacto-text p {
+  padding: 10px 0;
+  line-height: 1.3em;
+}
+.seccion-contacto-form {
+  width: 33%;
+  padding: 0 10px;
+  margin: auto;
+  text-align: center;
+}
+form {
+  text-align: left;
+}
+.form-filas {
+  width: 100%;
+  margin: 0;
+  display: flex;
+}
+input,
+select,
+textarea {
+  font-size: 14px;
+  padding: 16px;
+  margin: 5px;
+  border: 0px !important;
+  border-bottom: 1px solid var(--color-border) !important;
+}
+input[type="tel"] {
+  width: 48%;
+}
+input[type="email"] {
+  width: 48%;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+}
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  color: var(--color-border);
+  border: 0px !important;
+  border-bottom: 1px solid #000 !important;
+}
+input[type="button"] {
+  color: #000000 !important;
+  border-color: var(--color-danger); /* #;*/
+  background-color: var(--color-danger) !important;
+  border-radius: 0px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  padding: 10px 15px;
+  float: right;
+}
+input[type="button"]:hover {
+  transition: letter-spacing 300ms ease 0ms;
+  letter-spacing: 2px;
+}
+.seccion-contacto-mapa {
+  width: 50%;
+}
+
+footer {
+  margin-top: auto;
+  display: table;
+  background-color: var(--color-footer) !important;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+/* footer img {
+  filter: saturate(0%) brightness(200%) contrast(0%) sepia(100%);
+  width: 350px;
+} */
