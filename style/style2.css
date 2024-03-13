@@ -114,19 +114,17 @@ textarea:focus {
   border-bottom: 1px solid #000 !important;
 }
 input[type="button"] {
-  color: #000000 !important;
-  border-color: var(--color-danger); /* #;*/
-  background-color: var(--color-danger) !important;
-  border-radius: 0px;
+ 
+ 
   letter-spacing: 1px;
   font-size: 18px;
   padding: 10px 15px;
   float: right;
 }
-input[type="button"]:hover {
+/* input[type="button"]:hover {
   transition: letter-spacing 300ms ease 0ms;
   letter-spacing: 2px;
-}
+} */
 .seccion-contacto-mapa {
   width: 50%;
 }
@@ -153,4 +151,21 @@ footer a {
   padding: 10px 10px;
   text-decoration: none;
   color: #fff;
+}
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: medium;
+  
+}
+
+.primary {
+  background-color: var(--color-footer);
+}
+
+.primary:hover {
+  background: var(--color-header);
 }

@@ -14,10 +14,9 @@ const services = [
     precio_orientativo: 500,
   },
   {
-    nombre: "Asesoramiento financiero personalizado",
-    descripcion:
-      "Brindar asesoramiento financiero a clientes individuales sobre ahorro, inversión, planificación de la jubilación, gestión de deudas y creación de presupuestos personalizados.",
-    modelo_fiscal: "Planificación Financiera Personalizada",
+    nombre: "Asesoramiento en gestión de negocios",
+    descripcion: "Ofrecer consultoría en áreas como gestión financiera, análisis de viabilidad de proyectos, evaluación de inversiones, estrategias de crecimiento empresarial y optimización de procesos financieros.",
+    modelo_fiscal: "Gestión Financiera Empresarial",
     precio_orientativo: 300,
   },
   {
@@ -34,13 +33,7 @@ const services = [
     modelo_fiscal: "Cumplimiento de las Normas de Auditoría (NIA)",
     precio_orientativo: 1000,
   },
-  {
-    nombre: "Asesoramiento en gestión de negocios",
-    descripcion:
-      "Ofrecer consultoría en áreas como gestión financiera, análisis de viabilidad de proyectos, evaluación de inversiones, estrategias de crecimiento empresarial y optimización de procesos financieros.",
-    modelo_fiscal: "Gestión Financiera Empresarial",
-    precio_orientativo: 700,
-  },
+ 
   {
     nombre: "Servicios de nómina",
     descripcion:
@@ -93,7 +86,7 @@ function card(service) {
   });
   priceDetail.setAttribute("value", service.precio_orientativo);
   const addToCartButton = document.createElement("button");
-  addToCartButton.className = "add-item-to-cart";
+  addToCartButton.className = "btn primary";
   addToCartButton.innerText = "Añadir al carrito";
   fiscalModel.appendChild(fiscalModelTitle);
   fiscalModel.appendChild(fiscalModelDescription);
