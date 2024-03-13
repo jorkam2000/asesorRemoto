@@ -16,16 +16,16 @@
 
 <body>
   <header>
-    <img src="../assets/img/Logo2.png" alt="Logotipo">
+    <img src="../assets/img/Logo-aR.png" alt="Logotipo">
     <nav>
       <ul>
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Tienda</a></li>
         <li><a href="#">Contacto</a></li>
         <li><a href="#">Acerca de</a></li>
-        <li>Quienes Somos</li>
+        <!-- <li>Quienes Somos</li>
         <li>Nuestros Productos</li>
-        <li>Contacto</li>
+        <li>Contacto</li> -->
       </ul>
     </nav>
   </header>
@@ -37,7 +37,7 @@
         <p>Cuéntanos tu proyecto, tu visión y en </span><strong>asesorREMOTO</strong><span> te
             acompañaremos para encontrar la solución personalizada que se adapte a tus necesidades.</p>
       </div>
-      <form action="">
+      <form action="" id="contacto">
         <div class="form-filas">
           <label for=""> </label>
           <input type="text" name="" id="" placeholder="Nombre y Apellidos">
@@ -51,7 +51,7 @@
         <div class="form-filas">
           <label for=""></label>
           <select required>
-            <option value="">(*) Estoy interesado en</option>
+            <option value="">Estoy interesado en</option>
             <option value="111">111</option>
             <option value="222">222</option>
             <option value="333">333</option>
@@ -65,8 +65,9 @@
           <textarea name="" id="" cols="30" rows="10"></textarea>
         </div>
         <label for=""></label>
-        <input type="checkbox" name="aceptar" id=""> Acepto las <a href="">poíticas de privacidad</a>
-        <input type="button" value="Enviar">
+        <input type="checkbox" name="politicaPrivacidad" id="politicaPrivacidad"> Acepto las <a href="">poíticas de
+          privacidad</a>
+        <input type="button" id="botonEnviar" value="Enviar">
       </form>
     </div>
     <div class="seccion-contacto-mapa">
@@ -78,15 +79,24 @@
     </div>
   </section>
   <footer>
-    <img src="../assets/img/Logo2.png" alt="Logotipo Footer">
-    <div></div>
+    <img src="../assets/img/Logo-aR.png" alt="Logotipo Footer">
+    <div>
+      <a href="#">Inicio</a>
+      <a href="#">Tienda</a>
+      <a href="#">Contacto</a>
+      <a href="#">Acerca de</a>
+    </div>
     <div class="datos-contacto">
-      –Teléfono: +34 928 123 321 </br>
-      Correo: info@asesoriaremota.com </br>
-      –Dirección </br>
       Calle Mi Casa s/n<br>
       XXXXX Las Palmas de Gran Canaria<br>
       Las Palmas / España<br>
+      <br>
+      Teléfono: +34 928 123 321 </br>
+      Correo: info@asesoriaremota.com </br>
+      <br>
+      <a href="#" target="_blank"><img src="../assets/img/facebook2.png" alt="Facebook"></a>
+      <a href="#" target="_blank"><img src="../assets/img/twitter2.png" alt="Twitter"></a>
+      <a href="#" target="_blank"><img src="../assets/img/instagram2.png" alt="Instagram"></a>
     </div>
   </footer>
 </body>

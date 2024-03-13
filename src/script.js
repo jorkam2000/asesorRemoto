@@ -7,7 +7,7 @@ function enviarFormulario(event) {
       form.elements[i].value === "" &&
       form.elements[i].hasAttribute("required")
     ) {
-      form.elements[i].classList.add("campo-obligatorio");
+      // form.elements[i].classList.add("campo-obligatorio");
       isValid = false;
     } else {
       form.elements[i].classList.remove("campo-obligatorio");
