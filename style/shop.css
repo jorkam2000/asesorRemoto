@@ -18,11 +18,11 @@ body {
 }
 
 /* Carrito */
-.cart {
+#cart {
   position: sticky;
   top: 0;
   align-self: flex-start;
-  width: 30%;
+  width: 40%;
   margin: 5px;
 }
 
