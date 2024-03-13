@@ -1,0 +1,55 @@
+:root {
+  --color-footer: rgba(218, 44, 56, 1);
+  --color-header: rgba(34, 111, 84, 1);
+  --color-background: rgba(135, 195, 143, 1);
+  --color-text: rgba(244, 240, 187, 1);
+  --color-danger: rgba(67, 41, 31, 1);
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+#content {
+  display: flex;
+  height: 1200px;
+  overflow: auto;
+  margin: 10px;
+}
+
+/* Carrito */
+#cart {
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  width: 40%;
+  margin: 5px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+/* Servicios */
+
+#main {
+  width: 60%;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 25px;
+}
