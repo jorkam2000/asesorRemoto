@@ -1,27 +1,30 @@
 header {
 
     height: 180px;
-    background-color: black;
+    background-color: #0081A7;
     color: WHITE;
     text-align: center;
 }
-
+body{
+    background-color: #fdfcdc;
+    margin: 0;
+}
 .container {
     
-    height: 98vh;
+    
     margin: 0px 0px 80px 0px;
     
 }
 
 #description {
-    
+
     height: 35px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 0;
     align-items: center;
-    background-color: #ffe4e1;
+    background-color: #F07167;
 }
 
 #antpath {
@@ -37,19 +40,15 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #b0f2c2;
+    background-color: #FED9B7;
     flex-wrap: wrap;
 }
 
 #imgiphone {
-
     height: 90%;
-    
 }
 
 .text {
-
-    /* background-color: lightgreen; */
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -58,38 +57,34 @@ header {
 }
 
 .title-text {
-    
     width: 95%;
     height: 55px;
-    /* background-color: whitesmoke; */
-   
-   
-
 }
 
 .body-text {
     height: 45%;
-    /* background-color: whitesmoke; */
     width: 95%;
     margin-top: 5%;
     font-size: large;
     text-align: center;
     padding: 20px;
-
 }
 
 #services {
     
     width: auto;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 70px;
     flex-wrap: wrap;
+    margin-bottom: 30px;
+   
 }
 
 .product {
-    background-color: #b0c2f2;
+    background-color: #B7D9FE;
     width: 450px;
     height: 300px;
     border-radius: 5%;
@@ -99,15 +94,14 @@ header {
 
 
 button{
-    box-shadow: 5px 5px 5px #626362;
+    box-shadow: 5px 5px 5px black;
+    background-color: #fdfcdc;
     
-    background-color: #000000;
-    color: white;
 }
 
 footer {
     height: 280px;
-    background-color: rgb(51, 52, 124);
+    background-color: #00AFB9;
     color: white;
     text-align: center;
     width: 99.2vw;
@@ -139,17 +133,17 @@ h3{
     width: auto;
     height: auto;
     padding: 20px;
+    background-color:#FED9B7;
 
 }
 
 .review {
     font-size: medium;
     text-align: center;
-
     border-radius: 70% /100%;
     padding: 38px;
-    background-color: white;
     box-shadow: 5px 5px 5px black;
+    background-color: #FED9B7;
 }
 
 /* Google imagen review
