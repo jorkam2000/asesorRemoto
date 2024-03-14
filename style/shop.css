@@ -1,14 +1,13 @@
- :root {
-   --color-footer: #05292e;
-   --color-header: rgba(34, 111, 84, 1);
-   --color-background: #e8fafc;
-   --color-text: rgba(244, 240, 187, 1);
-   --color-danger: #a47049;
-   --color-border: #09474f;
-   --color-shadow: rgba(9, 72, 80, 0.2);
-   --color-gradiant: linear-gradient(45deg, #009AD9, #1B5AEC, #361BFF, #8357FF);
- }
-
+:root {
+  --color-footer: #05292e;
+  --color-header: rgba(34, 111, 84, 1);
+  --color-background: #e8fafc;
+  --color-text: rgba(244, 240, 187, 1);
+  --color-danger: #a47049;
+  --color-border: #09474f;
+  --color-shadow: rgba(9, 72, 80, 0.2);
+  --color-gradiant: linear-gradient(45deg, #009ad9, #1b5aec, #361bff, #8357ff);
+}
 
 #content {
   display: flex;
@@ -34,17 +33,30 @@
   padding-bottom: 5px;
 }
 
+.cart-service-price,
+#cart-total-price-tag {
+  float: right;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+
 .cart-footer {
+  border-top: 2px solid black;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   flex-direction: row;
+  margin-top: 10px;
+  padding-top: 10px;
+  font-weight: 600;
 }
 
 /* Servicios */
 
 #main {
   width: 60%;
- 
+
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -80,7 +92,6 @@
 }
 
 .service-card {
-  
   display: flex;
   width: 450px;
   flex-direction: column;
@@ -94,6 +105,7 @@
   padding: 2.75em 2.5em;
   box-shadow: 0 1.5em 2.5em -0.5em rgba(#000000, 0.1);
   transition: transform 0.45s ease, background 0.45s ease;
+  justify-content: space-evenly;
 
   h3 {
     color: #2e3c40;
@@ -136,21 +148,20 @@
     line-height: 1.2;
     margin: auto 0 0;
     transition: color 0.45s ease;
-
-
   }
 
   &:hover {
     .primary {
-        background-color: var(--color-header);
-      }
+      background-color: var(--color-header);
+    }
     background: var(--color-footer);
     transform: scale(1.03);
 
-    h3, h2,h4,
-      span {
+    h3,
+    h2,
+    h4,
+    span {
       color: #ffffff;
-
     }
 
     p {
@@ -181,4 +192,24 @@
   100% {
     transform: translateX(0.125em);
   }
+}
+
+#comprar {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: medium;
+
+  background-color: var(--color-footer);
+}
+#comprar:disabled {
+  background-color: var(--color-shadow);
 }

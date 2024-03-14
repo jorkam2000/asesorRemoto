@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
- <!--  <link rel="stylesheet" href="../style/style.css" /> -->
+  <!--  <link rel="stylesheet" href="../style/style.css" /> -->
   <link rel="stylesheet" href="../style/style2.css" />
   <link rel="stylesheet" href="../style/shop.css" />
 
@@ -24,7 +24,7 @@
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="./shop/shop.html">Tienda</a></li>
         <li><a href="../contact/contact2.html">Contacto</a></li>
-        <li><a href="#">Acerca de</a></li>
+        <li><a href="../contact/agenda.html">Agendar cita</a></li>
         <!-- <li>Quienes Somos</li>
           <li>Nuestros Productos</li>
           <li>Contacto</li> -->
@@ -33,7 +33,7 @@
   </header>
   <div id="content">
     <div id="main">
-      
+
     </div>
     <div id="cart">
       <div class="cart-title">
@@ -41,40 +41,27 @@
       </div>
       <div id="cart-items">
         <div class="empty-cart">El Carrito está vacío.</div>
-        <!-- <div class="cart-item"> -->
-        <!-- <span class="cart-service-name">Nombre del Servicio</span>
-            <span class="cart-service-price">1.999,99</span>€
-            <div class="cart-item-cancel-button"><button>&#10006;</button></div>
-          </div>
-          <div class="cart-item">
-            <span class="cart-service-name">Nombre del Servicio</span>
-            <span class="cart-service-price">1.999,99€</span>
-            <div class="cart-item-cancel-button"><button>&#10006;</button></div>
-          </div>
-          <div class="cart-item">
-            <div class="cart-service-name">Nombre del Servicio</div>
-            <div class="cart-service-price">1.999,99€</div>
-            <div class="cart-item-cancel-button"><button>&#10006;</button></div>
-          </div>
-          <div class="cart-item">
-            <span class="cart-service-name">Nombre del Servicio</span>
-            <span class="cart-service-price">1.999,99€</span>
-            <div class="cart-item-cancel-button"><button>&#10006;</button></div>
-          </div> -->
+
       </div>
       <div class="cart-footer">
-        <div class="cart-total-title">Total Servicios Contratados</div>
-        <div id="cart-total-price-tag">0,00€</div>
+        <div class="cart-total-title cart-service-name">Total Servicios Contratados</div>
+        <div style='display: flex; flex-direction: row;gap: 10px'>
+          <div id="cart-total-price-tag">0,00€</div>
+          <div class="cart-item-cancel-button" style="opacity: 0;"><button>✖</button></div>
+
+        </div>
+        <button id="comprar" disabled onclick="realizarCompra()">Contratar</button>
       </div>
+
     </div>
   </div>
   <footer>
     <img src="../assets/img/Logo-aR.png" alt="Logotipo Footer">
     <div>
-      <a href="#">Inicio</a>
-      <a href="#">Tienda</a>
-      <a href="#">Contacto</a>
-      <a href="#">Acerca de</a>
+      <a href="../index.html">Inicio</a>
+      <a href="../shop/shop.html">Tienda</a>
+      <a href="../contact/contact2.html">Contacto</a>
+      <a href="../contact/agenda.html">Acerca de</a>
     </div>
     <div class="datos-contacto">
       Calle Mi Casa s/n<br>

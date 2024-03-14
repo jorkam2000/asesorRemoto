@@ -15,7 +15,8 @@ const services = [
   },
   {
     nombre: "Asesoramiento en gestión de negocios",
-    descripcion: "Ofrecer consultoría en áreas como gestión financiera, análisis de viabilidad de proyectos, evaluación de inversiones, estrategias de crecimiento empresarial y optimización de procesos financieros.",
+    descripcion:
+      "Ofrecer consultoría en áreas como gestión financiera, análisis de viabilidad de proyectos, evaluación de inversiones, estrategias de crecimiento empresarial y optimización de procesos financieros.",
     modelo_fiscal: "Gestión Financiera Empresarial",
     precio_orientativo: 300,
   },
@@ -33,7 +34,7 @@ const services = [
     modelo_fiscal: "Cumplimiento de las Normas de Auditoría (NIA)",
     precio_orientativo: 1000,
   },
- 
+
   {
     nombre: "Servicios de nómina",
     descripcion:
@@ -109,13 +110,17 @@ function showCart() {
     for (item of carrito) {
       cartItems.innerHTML += `<div class="cart-item">
             <span class="cart-service-name">${item.nombreProducto}</span>
+            <div style='display: flex; flex-direction: row;gap: 10px'>
             <span class="cart-service-price">${item.precioProducto}</span>
             <div class="cart-item-cancel-button"><button onclick="deleteItem(this)">✖</button></div>
+            </div>
           </div>`;
       totalCart += Number(item.importe);
+      document.getElementById("comprar").disabled = false;
     }
   } else {
     cartItems.innerHTML = `<div class="empty-cart">El Carrito está vacío.</div>`;
+    document.getElementById("comprar").disabled = true;
   }
   console.log(totalCart);
   const cartTotalPriceTag = document.getElementById("cart-total-price-tag");
@@ -127,7 +132,7 @@ function showCart() {
 
 function deleteItem(item) {
   const nombreProducto =
-    item.parentNode.parentNode.querySelector("span").innerText;
+    item.parentNode.parentNode.parentNode.querySelector("span").innerText;
   carrito = carrito.filter(
     (cartItem) => cartItem.nombreProducto != nombreProducto
   );
@@ -155,12 +160,21 @@ function addToCart(e) {
   }
 }
 
+function realizarCompra() {
+  if (carrito.length > 0) {
+    alert("Su compra ha sido realizada con éxito!!!");
+    carrito = [];
+    showCart();
+  } else {
+    alert("No hay productos en el carrito para comprar!!");
+  }
+}
+
 window.onload = function () {
   for (service of services) {
     card(service);
   }
-  const addServicesButtons =
-    document.getElementsByClassName("add-item-to-cart");
+  const addServicesButtons = document.getElementsByClassName("btn");
   for (i = 0; i < addServicesButtons.length; i++) {
     addServicesButtons[i].onclick = addToCart;
   }
